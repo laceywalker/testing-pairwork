@@ -35,5 +35,7 @@ def number_to_full_month_name(num)
     return "January"
   elsif num == 3
     return "March"
+  elsif num == 9
+    return "September"
   end
 end
