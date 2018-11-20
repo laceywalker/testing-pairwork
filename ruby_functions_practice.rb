@@ -37,10 +37,12 @@ def number_to_full_month_name(num)
     return "March"
   elsif num == 9
     return "September"
+  elsif num == 4
+    return "April"
   end
 end
 
 def number_to_short_month_name(num)
-  long_month = number_to_full_month_name(num)
-  return long_month[0..2]
+  long_month = number_to_full_month_name(num) #create new variable set to previous method
+  return long_month[0..2] #splice method, shortens by index
 end
